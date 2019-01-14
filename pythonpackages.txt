@@ -1,0 +1,6 @@
+intel-numpy
+intel-scipy
+matplotlib
+sympy
+
+jupyter
