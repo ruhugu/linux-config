@@ -1,4 +1,4 @@
-In order to disable asterisks in the sudo password prompt remove (or rename) /etc/sudoers.d/0pwfeedback
+In order to disable asterisks in the sudo password prompt, remove (or rename) /etc/sudoers.d/0pwfeedback
 ```
 sudo mv /etc/sudoers.d/0pwfeedback /etc/sudoers.d/0pwfeedback.disabled
 ```
