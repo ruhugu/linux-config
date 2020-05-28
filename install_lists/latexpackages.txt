@@ -23,3 +23,6 @@ biblatex
 epigraph
 nextpage
 ulem
+preprint
+beamer
+grfext
