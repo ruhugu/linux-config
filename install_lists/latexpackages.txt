@@ -27,3 +27,5 @@ preprint
 beamer
 grfext
 oberdiek
+pdfpages
+pdflscape
