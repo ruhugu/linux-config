@@ -3,9 +3,11 @@
 # openifclosed APPLICATION
 # If the application is already running, this command focuses the application 
 # window. If it is closed, it starts the application.
-  
-output=$(wmctrl -a $1 -v 2>&1) 
- 
-if [[ $output != *"Using window"* ]]; then 
-    $1 
-fi 
+
+window_id=$(wmctrl -l -p -x | grep --ignore-case $1 | cut -d ' ' -f1 | head -n 1)
+
+if [[ $window_id == "" ]]; then
+    $1
+else
+    wmctrl -i -a $window_id
+fi
