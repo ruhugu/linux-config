@@ -4,6 +4,7 @@ python3
 python3-pip
 git
 dropbox
+owncloud-client
 
 inkscape
 gimp
