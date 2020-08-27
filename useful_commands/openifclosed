@@ -3,6 +3,7 @@
 # openifclosed APPLICATION
 # If the application is already running, this command focuses the application 
 # window. If it is closed, it starts the application.
+# Requires wmcrtl
 
 window_id=$(wmctrl -l -p -x | grep --ignore-case $1 | cut -d ' ' -f1 | head -n 1)
 
