@@ -29,3 +29,4 @@ grfext
 oberdiek
 pdfpages
 pdflscape
+fancyhdr
