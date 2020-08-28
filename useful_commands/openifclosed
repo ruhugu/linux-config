@@ -1,14 +1,24 @@
 #!/bin/bash 
 
-# openifclosed APPLICATION
+# openifclosed APPLICATION NWINDOW
 # If the application is already running, this command focuses the application 
 # window. If it is closed, it starts the application.
+# The NWINDOW-th window from wmctrl output is used (default value 1).
 # Requires wmcrtl
 
+# Parse command-line arguments
 application=$1
 
-window_id=$(wmctrl -l -p -x | grep --ignore-case $application | cut -d ' ' -f1 | head -n 1)
+if [[ $2 == "" ]]; then
+    nwindow=1
+else
+    nwindow=$2
+fi
 
+# Get window ID
+window_id=$(wmctrl -l -p -x | grep --ignore-case $application | cut -d ' ' -f1 | sed -n "$nwindow"p)
+
+# Open window
 if [[ $window_id == "" ]]; then
     $application
 else
