@@ -5,10 +5,12 @@
 # window. If it is closed, it starts the application.
 # Requires wmcrtl
 
-window_id=$(wmctrl -l -p -x | grep --ignore-case $1 | cut -d ' ' -f1 | head -n 1)
+application=$1
+
+window_id=$(wmctrl -l -p -x | grep --ignore-case $application | cut -d ' ' -f1 | head -n 1)
 
 if [[ $window_id == "" ]]; then
-    $1
+    $application
 else
     wmctrl -i -a $window_id
 fi
