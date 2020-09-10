@@ -30,3 +30,4 @@ oberdiek
 pdfpages
 pdflscape
 fancyhdr
+ragged2e
