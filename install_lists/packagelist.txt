@@ -5,6 +5,7 @@ python3
 python3-pip
 git
 owncloud-client
+screen
 
 inkscape
 gimp
