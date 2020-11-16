@@ -31,3 +31,4 @@ pdfpages
 pdflscape
 fancyhdr
 ragged2e
+titlesec
