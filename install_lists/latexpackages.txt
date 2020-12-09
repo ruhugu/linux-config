@@ -32,3 +32,4 @@ pdflscape
 fancyhdr
 ragged2e
 titlesec
+siunitx
