@@ -3,5 +3,6 @@ scipy
 matplotlib
 sympy
 pandas
+torch
 
-jupyter
+jupyterlab
